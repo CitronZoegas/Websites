@@ -1,0 +1,582 @@
+<head>
+    <title>Jose Manchego</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="cssfil" type="text/css" href="cssfil.css" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+    $(document).on("scroll",function(){
+        if($(document).scrollTop()>100){
+            $("home-header").removeClass("menu-button").addClass("fixed-menu-button");
+        } else{
+            $("home-header").removeClass("fixed-menu-button").addClass("menu-button");
+        }
+    });
+</script>
+
+</head>
+
+<style>
+body {
+    background-color:black;
+    position: relative;
+    margin: 0;
+    padding:0;
+    text-align:center;
+}
+header,fixed-menu-button,menu-button {
+    transition:all 1s;
+}
+.home-header {
+    margin:0;
+    background-color:black;
+}
+
+.home-header h1{
+    margin:0;
+}
+.header-bluehead {
+    top:35rem;
+    background-size:100%;
+    margin:0;
+    background-color:black;
+    position: bottom;
+    margin:9rem;
+    overflow:hidden;
+    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    font-size:15rem;
+    text-align:center;
+    color:teal;
+}
+.pete {
+    background-image: url('https://scene360.com/wp-content/uploads/2015/11/hateplow-07.gif');
+    background-repeat:no-repeat;
+    background-size:100%;
+    width:80%;
+    height: 120vh;
+    margin:auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding:0;
+    color: white;
+
+}
+
+<!-- this is the 2nd section-->
+.home-about-me {
+    margin:auto;
+    height: 120vh;
+    background-color:black;
+}
+
+<!-- this is the 3rd section-->
+.3rdSection {
+
+    margin:0;
+    height: 120vh;
+    background-color:black;
+    box-sizing: border-box;
+}
+/* TRAILER BUTTONS STYLING */
+
+.trailer-button {
+    cursor: pointer;
+    border:none;
+    outline:none;
+    transition: all .5 ease;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    background-color: black;
+    text-transform: uppercase;
+    line-height: .5rem;
+    font-size: 2rem;
+    padding: .2rem;
+    margin: .2rem;
+    outline: none;
+    border-radius: 0.1rem;
+}
+.trailer-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: .2s ease;
+}
+.trailer-button span:after {
+    content: '\00BB';
+    font-size: 2rem;
+    position:absolute;
+    opacity: 0;
+    top: 0;
+    right: -3rem;
+    transition: .2s ease;
+}
+.trailer-button:hover span {
+    padding-right: 3rem;
+}
+.trailer-button:hover span:after {
+    opacity:1;
+    right:0;
+}
+
+/* MAIN MENU BUTTONS STYLING */
+
+.home-header .menu-button {
+    scroll: scroll;
+    cursor: pointer;
+    border:none;
+    outline:none;
+    transition: all .2 ease;
+    color: white;
+    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    background-color: black;
+    text-transform: uppercase;
+    line-height: auto;
+    font-size: 2rem;
+    width: 14rem;
+    height:2rem;
+    outline: none;
+    border-radius: 2rem;
+
+}
+.menu-button span {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    z-index:5;
+    transition: .8s ease;
+}
+.menu-button span:after {
+    content: '\00BB';
+    position:absolute;
+    display:inline-block;
+    opacity: 0;
+    right: 3rem;
+    transition: .8s ease;
+}
+.menu-button:hover span {
+    padding-right: 3rem;
+}
+.menu-button:hover span:after {
+    opacity:1;
+    right:0;
+}
+/*SCROLLING MENU BUTTONS FIXED POSITION*/
+
+/*.home-header .fixed-menu-button {
+    cursor: pointer;
+    border:none;
+    outline:none;
+    transition: all .2 ease;
+    color: white;
+    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    background-color: black;
+    text-transform: uppercase;
+    line-height: auto;
+    font-size: 160%;
+    padding-right: 2%;
+    margin-bottom: 3%;
+    height:5%;
+    width: 15%;
+    outline: none;
+    border-radius: 4px;
+}
+.fixed-menu-button span {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    z-index:5;
+    transition: .8s ease;
+}
+.fixed-menu-button span:after {
+    content: '\00BB';
+    position:absolute;
+    display:inline-block;
+    opacity: 0;
+    right: -10%;
+    transition: .8s ease;
+}
+.fixed-menu-button:hover span {
+    padding-right: 2%;
+}
+.fixed-menu-button:hover span:after {
+    opacity:1;
+    right:0;
+}*/
+
+.text-section1st{
+    background-color:black;
+    color:teal;
+    font-size: 6.3rem;
+
+
+}
+.text-section2nd{
+    background-color:black;
+    color:teal;
+    font-size: 6.3rem;
+
+}
+.text-section3rd{
+    background-color:black;
+    color:teal;
+    font-size: 6.3rem;
+
+
+}
+.Center {
+    color: teal;
+    background-color:black;
+    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    font-size:5rem;
+    margin-bottom:.3rem;
+}
+
+.teal-bg {
+    background: teal;
+    height:100vh;
+    color: white;
+    position:relative;
+}
+.I-button {
+    border: none;
+    background-color: inherit;
+    color:teal;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.I-button:hover {
+    padding-left:20px;
+    padding-right:20px;
+    transition: .2 ease;
+}
+
+
+
+
+
+
+
+/*STYLES AND HOVER EFFECTS FOR THE GALLERY IMAGES*/
+
+/*Creating the grid*/
+
+.container {
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows:200px 300px 150px 250px;
+    grid-gap:10px;
+    grid-auto-flow: dense;
+}
+
+/*Making a style for the 1st column of photos*/
+
+.gallery-itemcolumn1 {
+    width:100%;
+    height:100%;
+    position:relative;
+
+}
+
+.gallery-itemcolumn1 .image {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.gallery-itemcolumn1 .image img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+    transition:.5s ease-in-out;
+}
+.gallery-itemcolumn1:hover .image img {
+    cursor: pointer;
+	transform:scale(1.5);
+}
+.gallery-itemcolumn1 text {
+
+    opacity:0;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    color:white;
+    pointer-events:none;
+    z-index:4;
+    font-size:20px;
+    transition: .2 ease-in-out;
+    -webkit-backdrop-filter: blur(5px) saturate(100);
+    backdrop-filter: blur(70px) saturate(10);
+}
+.gallery-itemcolumn1:hover text {
+    opacity:1;
+    animation: move-down .2s linear;
+    font-size:150%
+}
+
+
+
+
+/*Making a style for the 2nd column of photos*/
+
+.gallery-itemcolumn2 {
+    width:100%;
+    height:100%;
+    position:relative;
+
+}
+
+.gallery-itemcolumn2 .image2 {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.gallery-itemcolumn2 .image2 img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+    transition: .5s ease-in-out;
+}
+.gallery-itemcolumn2:hover .image2 img {
+    cursor: pointer;
+	transform:scale(1.5);
+}
+.gallery-itemcolumn2 text {
+
+    opacity:0;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    color:white;
+    pointer-events:none;
+    z-index:4;
+    font-size:15px;
+    transition: .2 ease-in-out;
+
+    -webkit-backdrop-filter: blur(5px) saturate(100);
+    backdrop-filter: blur(70px) saturate(1.5);
+}
+.gallery-itemcolumn2:hover text {
+    opacity:1;
+    font-size:150%;
+    animation: move-down .2s linear;
+
+}
+@keyframes move-down{
+    0%{
+        top:10%;
+    }
+    50%{
+        top:35%;
+    }
+    100%{
+        top:50%;
+    }
+
+
+}
+
+/*FOOTER AND ALL THE DESIGN*/
+.footer-basic {
+  padding:40px 0;
+  background-color:black;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:35px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 10px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+</style>
+
+<body>
+    <header class="home-header" >
+
+        <button class="menu-button"  onclick="window.location.href= 'www.facebook.com';">
+            <span>BOOK ME</span>
+        </button>
+        <button class="menu-button" >
+            <span>SCHEDULE</span>
+        </button>
+        <button class="menu-button" >
+            <span>SHOWS</span>
+        </button>
+        <button class="menu-button" >
+            <span>MERCH</span>
+        </button>
+        <h1 class="header-bluehead">
+            BlueHead
+        </h1>
+        <!--<button class="fixed-menu-button"  onclick="window.location.href= 'www.facebook.com';">
+            <span>BOOK ME</span>
+        </button>
+        <button class="fixed-menu-button" >
+            <span>SCHEDULE</span>
+        </button>
+        <button class="fixed-menu-button" >
+            <span>SHOWS</span>
+        </button>
+        <button class="fixed-menu-button" >
+            <span>MERCH</span>
+        </button> -->
+
+
+    </header>
+
+    <section class ="pete">
+
+    </section>
+    <section class="home-about-me" >
+        <div class="home-about-me-icon"></div>
+            <div class="Center" >#1 DJ according to:</div>
+            <div class="Center" ><a href="www.djrankings.org">1.djrankings</a></div>
+            <div class="Center" ><a href="#">2.djmag</a></div>
+            <div class="Center" ><a href="#">3.thedjlist</a></div>
+            <div class="Center" ><a>And many more...</a></div>
+
+                <div class="text-section1st">This is not your typical website.</div>
+                <div class="text-section2nd">This webs<button class="I-button" style="font-size:16rem">i</button>te is BlueHeads'</div>
+                <div class="text-section3rd"> Check me out on other platforms! </div>
+                    <button class="trailer-button" style="height:10rem; width:15rem" > <span> my Life. </span> </button>
+                    <button class="trailer-button" style="height:10rem; width:15rem"> <span> Spotify.</span></button>
+                    <button class="trailer-button" style="height:10rem; width:22rem"> <span> Soundcloud.</span></button>
+
+    </section>
+    <div class="teal-bg" style="height:120vh; margin-top:1%;" >
+
+        <div class="container" >
+            <div class="gallery-itemcolumn1">
+                <div class="image">
+                    <img class="1stcolumn" src="https://wallpaperaccess.com/full/6133802.jpg" alt="Baillardaín" >
+                </div>
+                <text class="1stcolumn-caption"><span>Baillardaín, Canelcônes Petït ceu bluérie</span></text>
+            </div>
+
+            <div class="gallery-itemcolumn2">
+                <div class="image2">
+                    <img class="2ndcolumn" src="https://edm.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTYxNjU1NTQ2NzQ5OTIwODkz/afrojack-brooklyn-avant-gardner-2019-8.jpg" alt="Remmié" >
+                </div>
+                <text class="2ndcolumn-caption">Remmié, cé croc DJ en "Neuf"</text>
+            </div>
+            <div class="gallery-itemcolumn2">
+                <div class="image2">
+                    <img class="2ndcolumn" src="https://rolandcorp.com.au/blog/wp-content/uploads/2017/09/2.DJ-playing-set.jpg" alt="Remmié" >
+                </div>
+                <text class="2ndcolumn-caption">Remmié, cé croc DJ en "Neuf"</text>
+            </div>
+            <div class="gallery-itemcolumn2">
+                <div class="image2">
+                    <img class="2ndcolumn" src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Fzackomalleygreenburg%2Ffiles%2F2017%2F08%2F0731_lb-dj-marshmello_1200x630.jpg" alt="Remmié" >
+                </div>
+                <text class="2ndcolumn-caption">Remmié, cé croc DJ en "Neuf"</text>
+            </div>
+            <div class="gallery-itemcolumn2">
+                <div class="image2">
+                    <img class="2ndcolumn" src="https://i1.wp.com/djtechtools.com/wp-content/uploads/2019/09/yotto-dj-tips-2.jpg?fit=1129%2C648&ssl=1" alt="Remmié" >
+                </div>
+                <text class="2ndcolumn-caption">Remmié, cé croc DJ en "Neuf"</text>
+            </div>
+            <div class="gallery-itemcolumn2">
+                <div class="image2">
+                    <img class="2ndcolumn" src="https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2018/02/21212546/soundevolution_tiesto_720.jpg" alt="Remmié" >
+                </div>
+                <text class="2ndcolumn-caption">Remmié, cé croc DJ en "Neuf"</text>
+            </div>
+            <div class="gallery-itemcolumn2">
+                <div class="image2">
+                    <img class="2ndcolumn" src="https://i.dailymail.co.uk/i/pix/2016/04/21/08/3362010A00000578-3551261-image-a-25_1461222712885.jpg" alt="Remmié" >
+                </div>
+                <text class="2ndcolumn-caption">Remmié, cé croc DJ en "Neuf"</text>
+            </div>
+            <div class="gallery-itemcolumn2">
+                <div class="image2">
+                    <img class="2ndcolumn" src="https://i.pinimg.com/736x/71/ac/de/71acde70080a86f0b564b6dafd3a1e77.jpg" alt="Remmié" >
+                </div>
+                <text class="2ndcolumn-caption">Remmié, cé croc DJ en "Neuf"</text>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="www.instagram.com"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Shows</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">BlueHead © 2021 Copyright all right reserved.</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>

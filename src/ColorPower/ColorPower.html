@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<!-- First section, the home-color section -->
+
+<style>
+body{
+   background-size: cover;
+   width:100%;
+}
+.Center {
+    margin: 0;
+
+
+
+}
+.nav-button button {
+    cursor: pointer;
+    border:none;
+    outline:none;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    background-color: #191f45;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 3;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.nav-button button:hover {
+    transition: all 1.5s ease;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 4000% 4000%;
+    animation: gradient 10s ease infinite alternate;
+}
+
+h1 {
+     font-family:Montserrat, sans-serif;
+     <!--text-transform: uppercase;-->
+     -webkit-user-select: none;
+     -webkit-touch-callout: none;
+     size: 100;
+     color: white;
+     position: absolute;
+     text-align: center;
+     top: 30%;
+     width: 100%;
+}
+
+.home-head{
+    background-color: #191f45;
+    <!--background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);-->
+    background-size: 4000% 4000%;
+    animation: gradient 30s ease infinite;
+}
+
+.background-animation {
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 4000% 4000%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+<!-- start of 2nd section-->
+.home-about-me {
+
+    height: 100vh;
+    background-color:beige;
+    box-sizing: border-box;
+}
+
+
+
+.trailer-button{
+    position:relative;
+    cursor: pointer;
+    border:none;
+    outline:none;
+    transition: all .5 ease;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    background-color: black;
+    text-transform: uppercase;
+    line-height: 3.8;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+.trailer-button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: .5s ease;
+}
+.trailer-button span:after {
+    content: '\00BB';
+    font-size:20px;
+    position:absolute;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    transition: .5s ease;
+}
+.trailer-button:hover span{
+
+    padding-right: 40px;
+}
+.trailer-button:hover span:after{
+    opacity:1;
+    right:0;
+}
+
+p {
+    margin: 0;
+    padding 0;
+}
+.heavy {
+    font-family: Comic Sans MS;
+}
+<!-- applying the correct size to my images-->
+
+
+
+<!--This is the Image section-->
+
+.3rdSection {
+    margin:0;
+    height: 100vh;
+    background-color:black;
+}
+
+
+
+<!-- Applying a hover effect to my images-->
+.picture-section img {
+
+}
+.picture-section img:hover {
+
+}
+
+/*STYLES AND HOVER EFFECTS FOR THE GALLERY IMAGES*/
+.container {
+    position:relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows:50%;
+    grid-gap:10px;
+    grid-auto-flow: dense;
+}
+.gallery-images {
+    width:100%;
+    height:65%;
+    position:relative;
+    overflow:hidden;
+}
+.gallery-images img{
+
+    width:100%;
+    height:80%;
+    object-fit: cover;
+    object-position:50% 50%;
+    transition:.5s ease-in-out;
+}
+
+
+/*FOOTER AND ALL THE DESIGN*/
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#2FA7E1;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:white;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:35px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 10px;
+  color:white;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:white;
+  margin-bottom:0;
+}
+</style>
+
+<body>
+    <div class="home-image-title-header">
+    <header class="home-head">
+
+        <div class="home-title">
+            <title>José Pedro Gonzales Macademía</title>
+            <h1 style="font-size:90px">José Pedro Gonzales Macademía</h1>
+            <div class="nav-button" style="text-align:center;">
+                    <button class="button1" onclick="window.location.href= 'www.facebook.com';">Facebook</button>
+                    <button class="button2" onclick="window.location.href= 'www.youtube.com';">YouTube</button>
+                    <button class="button3" onclick="window.location.href= 'www.instagram.com';">Instagram</button>
+                    <button class="button4" onclick="window.location.href= 'www.github.com';">GitHub</button>
+                    <button class="button5" onclick="window.location.href= 'www.twitter.com';">Twitter</button>
+                    <button class="button6" onclick="window.location.href= 'www.hotmail.com';">E-Mail</button>
+            </div>
+
+        <link rel="shortcut icon"
+            href="https://images.squarespace-cdn.com/content/v1/5afc878bec4eb7733d159ebf/1588773391014-XNGD30CHMIT1PX6CAQZ0/2020_PKBranding_Logo_v1_RGB.jpg?format=1500w" type="image/gif">
+
+    </div>
+    </header>
+    <section class="home-colorful">
+        <div class="background-animation">
+
+        </div>
+    </section>
+    </div>
+
+    <!--Section after the colors-->
+    <section class ="home-about-me">
+        <div class="home-about-me-icon"></div>
+
+        <button class="trailer-button" > <span> Watch my life trailer. </span> </button>
+        <button class="trailer-button" > <span> My  latest project Git.</span></button>
+    </section>
+
+    <!--Section after the beige-->
+
+    <section class="3rdSection" style="height:;">
+        <div class="container">
+            <div class="gallery-images">
+                <div class="coffee-img">
+                    <img class="coffee-cup"     src="https://images.pexels.com/photos/2316543/pexels-photo-2316543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" >
+                </div>
+            </div>
+            <div class="gallery-images">
+                <div class="pina-colada">
+                    <img class="pineapple-cup"  src="https://images.pexels.com/photos/8963466/pexels-photo-8963466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+            </div>
+            <div class="gallery-images">
+                <div class="pina-colada">
+                    <img class="pineapple-cup"  src="https://images.pexels.com/photos/8963466/pexels-photo-8963466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+            </div>
+            <div class="gallery-images">
+                <div class="pina-colada">
+                    <img class="pineapple-cup"  src="https://images.pexels.com/photos/8963466/pexels-photo-8963466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+            </div>
+            <div class="gallery-images">
+                <div class="pina-colada">
+                    <img class="pineapple-cup"  src="https://images.pexels.com/photos/8963466/pexels-photo-8963466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+            </div>
+            <div class="gallery-images">
+                <div class="pina-colada">
+                    <img class="pineapple-cup"  src="https://images.pexels.com/photos/8963466/pexels-photo-8963466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="last-section" style="height:120vh;">
+
+    </section>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="www.instagram.com"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">ColorPower © 2021 Copyright all right reserved.</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

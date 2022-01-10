@@ -1,0 +1,329 @@
+.body {
+    margin: 0;
+    padding:0;
+    text-align:center;
+}
+.home-header{
+    margin-left: 80px;
+}
+.home-header .menu-buttons{
+    margin:20px;
+
+}
+
+.pete {
+    background-image: url('https://scene360.com/wp-content/uploads/2015/11/hateplow-07.gif');
+    background-size:cover;
+    height: 120vh;
+    padding:0;
+    margin:0;
+    color: white;
+    box-sizing: border-box;
+}
+<!-- this is the 2nd section-->
+.home-about-me {
+    margin:10px;
+    height: 120vh;
+    background-color:beige;
+    box-sizing: border-box;
+}
+
+<!-- this is the 3rd section-->
+.3rdSection {
+    margin:0;
+    height: 120vh;
+    background-color:black;
+    box-sizing: border-box;
+}
+/* TRAILER BUTTONS STYLING */
+
+.trailer-button {
+    cursor: pointer;
+    border:none;
+    outline:none;
+    transition: all .5 ease;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    background-color: black;
+    text-transform: uppercase;
+    line-height: 3.8;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+.trailer-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: .2s ease;
+}
+.trailer-button span:after {
+    content: '\00BB';
+    font-size:20px;
+    position:absolute;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    transition: .2s ease;
+}
+.trailer-button:hover span {
+    padding-right: 40px;
+}
+.trailer-button:hover span:after {
+    opacity:1;
+    right:0;
+}
+
+/* MAIN MENU BUTTONS STYLING */
+
+.menu-button {
+    cursor: pointer;
+    border:none;
+    outline:none;
+    transition: all .2 ease;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    background-color: black;
+    text-transform: uppercase;
+    line-height: 3.8;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    height:100px;
+    width:200px;
+    outline: none;
+    border-radius: 4px;
+}
+.menu-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: .8s ease;
+}
+.menu-button span:after {
+    content: '\00BB';
+    font-size:20px;
+    position:absolute;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    transition: .8s ease;
+}
+.menu-button:hover span {
+    padding-right: 40px;
+}
+.menu-button:hover span:after {
+    opacity:1;
+    right:0;
+}
+
+.text-section1st{
+    font-size: 6.3rem;
+
+
+}
+.text-section2nd{
+    font-size: 6.3rem;
+
+}
+.text-section3rd{
+    font-size: 6.3rem;
+
+
+}
+.Center {
+    color: teal;
+    font-family: serif;
+    font-size:300px;
+    margin-bottom:120px;
+    text-decoration: underline;
+
+}
+
+.teal-bg {
+    background: teal;
+    height:100vh;
+    color: white;
+    position:relative;
+}
+.I-button {
+    border: none;
+    background-color: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.I-button:hover {
+    padding-left:20px;
+    padding-right:20px;
+    transition: .2 ease;
+}
+
+
+/*FOOTER AND ALL THE DESIGN*/
+.footer-basic {
+  padding:40px 0;
+  background-color:black;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:35px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 10px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+
+
+
+/*STYLES AND HOVER EFFECTS FOR THE GALLERY IMAGES*/
+
+/*Creating the grid*/
+
+.container {
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows:200px 300px 150px 250px;
+    grid-gap:10px;
+    grid-auto-flow: dense;
+}
+
+/*Making a style for the 1st column of photos*/
+
+.gallery-itemcolumn1 {
+    width:100%;
+    height:100%;
+    position:relative;
+
+}
+
+.gallery-itemcolumn1 .image {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+
+}
+.gallery-itemcolumn1 .image img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+    transition:.5s ease-in-out;
+}
+.gallery-itemcolumn1:hover .image img {
+    cursor: pointer;
+	transform:scale(1.5);
+}
+.gallery-itemcolumn1 text {
+
+    opacity:0;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    color:white;
+    pointer-events:none;
+    z-index:5;
+    font-size:20px;
+    transition: .3 ease-in-out;
+}
+.gallery-itemcolumn1:hover text {
+    opacity:1;
+    font-size:120%
+
+}
+
+/*Making a style for the 2nd column of photos*/
+
+.gallery-itemcolumn2 {
+    width:100%;
+    height:100%;
+    position:relative;
+
+}
+
+.gallery-itemcolumn2 .image2 {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.gallery-itemcolumn2 .image2 img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+    transition: .5s ease-in-out;
+}
+.gallery-itemcolumn2:hover .image2 img {
+    cursor: pointer;
+	transform:scale(1.5);
+}
+.gallery-itemcolumn2 text {
+    opacity:0;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    color:white;
+    pointer-events:none;
+    z-index:5;
+    font-size:15px;
+    transition: .3 ease-in-out;
+}
+.gallery-itemcolumn2:hover text {
+    opacity:1;
+    font-size:120%
+
+}
+
