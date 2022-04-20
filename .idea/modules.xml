@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DeployCVWebsite/DeployCVWebsite.iml" filepath="$PROJECT_DIR$/DeployCVWebsite/DeployCVWebsite.iml" />
       <module fileurl="file://$PROJECT_DIR$/Websites.iml" filepath="$PROJECT_DIR$/Websites.iml" />
     </modules>
   </component>
